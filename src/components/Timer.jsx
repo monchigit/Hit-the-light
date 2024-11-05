@@ -40,9 +40,23 @@ export function Timer ({ status, endTime }) {
       {
         status.state === gameStatus.ongoing || status.state === gameStatus.paused
         ? 
-        <h2 className="board-timer__h2">Current Time : {`${formatterMins(sec)}:${formatterSecs(sec)}:${formatterMsecs(sec)}`}</h2>
+        <div className="board-timer">
+          <h2 className="board-timer__h2">
+            Current Time 
+          </h2>
+          <h3 className="board-timer__h3">
+            {`${formatterMins(sec)}:${formatterSecs(sec)}:${formatterMsecs(sec)}`}
+          </h3>
+        </div>
         : 
-        <h2 className="board-timer__h2">Current Time : {"00:00:00"}</h2>
+        <div className="board-timer">
+          <h2 className="board-timer__h2">
+            Current Time
+          </h2>
+          <h3 className="board-timer__h3">
+            {"00:00:00"}
+          </h3>
+        </div>
       }
     </>
   )

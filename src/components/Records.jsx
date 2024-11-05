@@ -12,26 +12,29 @@ export function Records () {
   } ,[status.time])
 
   return (
-    <div className="records-square">
-      <h1 className="records-h1">Records</h1>
+    <section className="records">
+      <h2 className="records-h2">Records</h2>
+        <div className="records-container">
       {
         records.map((rec, i) => {
           return (
-            <div
-            key={i}
-            className={`record ${i}`}
-            >
-              <strong>{
-                !rec
-                ?
-                'Empty' 
-                :
-                `${formatterMins(rec)}:${formatterSecs(rec)}:${formatterMsecs(rec)}`
-              }</strong>
-            </div>
+              <div
+              key={i}
+              className={`record p${i+1}`}
+              >
+                <span className={`pos ${i+1}`}>{i+1}.</span>
+                <strong>{
+                  !rec
+                  ?
+                  'Empty' 
+                  :
+                  `${formatterMins(rec)}:${formatterSecs(rec)}:${formatterMsecs(rec)}`
+                }</strong>
+              </div>
           )
         })
       }
-    </div>
+        </div>
+    </section>
   )
 }

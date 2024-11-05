@@ -1,6 +1,12 @@
 :root {
   --color-wrong : rgba(186, 19, 35, 1);
-  --color-target : #dc5e0f;
+  --color-target : #eee;
   --color-selected : #87ed53;
-  --square-size : 150px;
+  --square-size-1 : 52px;
+  --square-size-2 : 70px;
+  --square-size-3 : 94px;
+  --square-size-4 : 112px;
+  --color-brand : #1F91DC;
+  --color-secundary : #7543d7;
+  --color-bg-main: #070707;
 }

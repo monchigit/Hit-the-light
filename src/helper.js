@@ -24,6 +24,6 @@ export const formatterSecs = (sec) => {
 
 export const formatterMsecs = (sec) => {
   let msecs = sec % 10
-  msecs = msecs.toString().padStart(1)
+  msecs = msecs.toString().padStart(2, '0')
   return msecs
 }

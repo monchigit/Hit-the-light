@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import "./Board.css"
 import { GameContext } from "../context/statusContext";
 import { Timer } from "./Timer";
 import { Squares } from "./Squares";
